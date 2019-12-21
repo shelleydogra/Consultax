@@ -224,9 +224,11 @@ nav .active {
 }
 
 .title-img {
-  width: 30%;
   color: #eee;
   padding: 0em 0;
+  min-width: 100%;
+  position: center;
+
 }
 
 @media (min-width: 60rem) {
@@ -284,7 +286,6 @@ nav .active {
     background-repeat: no-repeat;
     padding-bottom: 10em;
     background-size: cover;
-
   }
 
   .home-about-textbox {
@@ -321,11 +322,16 @@ nav .active {
   background-size: cover;
   background-position: center;
   background-color: rgba(60, 150, 240, 0.9);
-  height: 30vh;
+  height: 36vh;
   color: white;
   background-blend-mode: normal;
   margin-top: 5em;
 }
+.backgrounds h1 {
+  font-size: 4.0em;
+  font-weight: 800;
+}
+
 
 
 
