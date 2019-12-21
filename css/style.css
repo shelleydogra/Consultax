@@ -17,12 +17,68 @@ img {
   height: auto;
 }
 
+.container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+}
 .clearfix::after,
 section::after {
     content: '';
     display: block;
     clear: both;
 }
+
+/* ============ Column Sytstem ============ */
+
+[class^=col-] {
+    width: 100%;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+/*
+.col-3 {
+    width: 100%;
+}
+*/
+
+.col-1 {
+    width: 33.33334%;
+    float: left;
+
+}
+
+
+
+@media (max-width: 40rem) {
+
+    [class^=col-] {
+            float: left;
+            padding: 0 .5em;
+            margin-top: 0;
+    }
+
+    [class^=col-]:first-child {
+        padding-left: 0;
+    }
+
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+}
+
 
 /* Text */
 
@@ -35,7 +91,60 @@ h4 {margin: 0 0 .5em 0; font-size: 1.4em; font-weight: 700; }
 p {
   margin: 0 0 1em 0;
 }
+/* ============ typography ============ */
 
+h1 {
+    font-weight: 300;
+    font-szie:1.7rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 1em;
+    color: #DDD;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .5em;
+}
+
+.title-cta {
+    margin: 0 0 .5em;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media (min-width:60rem) {
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* Nav */
 
 nav .nav-item  {
   color: ;
@@ -94,6 +203,56 @@ nav .active {
   width: 50%;
   min-width: 186px;
 }
+
+/* ============ buttons ============ */
+
+.button {
+    background-image: linear-gradient(rgb(40, 110, 240), rgb(70, 190, 240));
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.button-accent {
+    color: #fff;
+    border-color: rgb(40, 110, 240);
+}
+
+
+.button-accent:hover,
+.button-accent:focus {
+    background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+    color: #fff;
+}
+
+.button-dark {
+    color: #232323;
+    border-color: #232323;
+}
+
+
+.button-dark:hover,
+.button-dark:focus {
+    background: #232323;
+    color: #fd04bb;
+}
+
+
 
 /* ============ Hero ============ */
 .home-hero {
@@ -206,6 +365,7 @@ nav .active {
 .portfolio {
     margin: 3em 0 0;
     z-index: 99;
+    text-align: center;
 }
 
 
@@ -250,7 +410,7 @@ nav .active {
         transform: translateY(150%);
     }
 
-    .port-item:hover .port-desc {
+                                                                                                                                                                                                                    .port-item:hover .port-desc {
         transform: translateY(0%);
     }
 }
@@ -258,6 +418,8 @@ nav .active {
 /* ============ cta ============ */
 
 .cta {
-    background-color: rgba(60, 150, 240, 1);
+    background-image: linear-gradient(rgb(40, 110, 240), rgb(70, 190, 240));
     padding: 5em 0;
+    text-align: center;
+    color: white;
 }
