@@ -233,7 +233,7 @@ nav .active {
 
 @media (min-width: 60rem) {
   .home-hero {
-    height: 100vh;
+    height: 100%;
     padding-top: 35vh;
   }
 }
