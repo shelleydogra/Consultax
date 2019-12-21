@@ -220,6 +220,7 @@ nav .active {
   padding: 20em;
   color: #eee;
   text-align: center;
+      width: 100vw;
 }
 
 .title-img {
@@ -232,6 +233,7 @@ nav .active {
   .home-hero {
     height: 110vh;
     padding-top: 35vh;
+
   }
 }
 
