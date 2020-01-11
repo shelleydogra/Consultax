@@ -162,4 +162,86 @@ nav .nav-item:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #eee;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10em;
+}
+
+.home-hero h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+  color: #DDD;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .5em;
+}
+
+.list-group-item {
+  text-transform: capitalize;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    padding: 25px 0px 60px 0px;
+    color: black;
+    font-size: .8em;
+}
+
+footer a {
+    color: rgb(40, 110, 240);
+    text-decoration: none;
+}
+
+footer h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.9em;
+}
+
+footer h4 {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+footer a:hover {
+    color: #fff;
+    padding: .3em;
+    background-color: rgb(40, 110, 240);
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+footer .column {margin-bottom: 20px;}
+footer .content{text-align: justify;}
+
+.copyright{
+  margin-top: 25px;
+}
+
+.disclaimer {
+    font-size: .7rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.text-muted {
+    font-size: .8em;
+}
+
+address{
+    font-size: 1.1rem;
 }
