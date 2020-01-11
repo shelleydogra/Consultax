@@ -34,6 +34,7 @@ nav img {
 
 nav .nav-item {
   position: relative;
+  text-align: center;
 }
 
 nav .nav-item::after {
@@ -55,10 +56,23 @@ nav .nav-item:hover::after {
   transform-origin: left;
 }
 
+.navbar-toggler {
+  border: 1px solid rgb(40, 110, 240);
+}
+
+.navbar-toggler-icon  {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, .85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+  border: 1px solid rgb(40, 110, 240);
+}
+
 .dropdown-menu .dropdown-item {
   text-decoration: none;
   position: relative;
   color: var(--company-color-dark);
+  text-align: center;
 }
 
 .dropdown-menu .dropdown-item::after {
@@ -80,26 +94,72 @@ nav .nav-item:hover::after {
   transform-origin: left;
 }
 
-.link-effect {
-  position: relative;
+/* ============ buttons ============ */
+
+.button {
+  background-image: linear-gradient(rgb(40, 110, 240), rgb(70, 190, 240));
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #fff;
+  border-color: rgb(40, 110, 240);
+}
+
+
+.button-accent:hover,
+.button-accent:focus {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: #fff;
   text-decoration: none;
-}
-.link-effect::after {
-  content: 'fast';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background: var(--company-color-dark);
-
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
+  transition: background-gradient 04s ease-out;
 }
 
-link-effect:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-  background-color: red;
+.button-dark {
+  color: white;
+  border-color: white;
+}
+
+
+.button-dark:hover,
+.button-dark:focus {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: white;
+  text-decoration: none;
+  border-style: outset;
+}
+
+.button-dark:hover,
+.button-dark: {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: white;
+  text-decoration: none;
+  border-style: outset;
+}
+
+/* --------- Home Hero --------- */
+
+.home-hero {
+  background-image: url(../img/tax_papers.jpg);
+  background-color: rgba(20,20,20,.55);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

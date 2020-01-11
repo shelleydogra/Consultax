@@ -228,10 +228,10 @@ nav .active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20em;
+  padding: 20em 0 20em 0;
   color: #eee;
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .title-img {
