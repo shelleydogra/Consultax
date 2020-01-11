@@ -25,11 +25,11 @@ img {
   height: auto;
 }
 
-/* .container {
+.container {
   width: 95%;
   max-width: 90em;
   margin: 0 auto;
-} */
+}
 
 .clearfix::after,
 section::after {
