@@ -15,10 +15,10 @@ body {
 }
 
 
-* {
+/* * {
   box-sizing: border-box;
   transition: all ease-in-out 400ms;
-}
+} */
 
 img {
   max-width: 100%;
@@ -31,25 +31,22 @@ img {
   margin: 0 auto;
 }
 
-.clearfix::after,
+/* .clearfix::after,
 section::after {
   content: '';
   display: block;
   clear: both;
-}
+} */
 
 
 /* Text */
 
 h1, h2, h3, h4 {text-align: center;}
-/* h1 {margin: 0 0 1em 0; font-size: 2.5em; font-weight: 700;}
-h2 {margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em;}
-h3 {margin: 0 0 .5em 0; font-size: 1.5em; font-weight: 700;}
-h4 {margin: 0 0 .5em 0; font-size: 1.4em; font-weight: 700; }
+
 
 p {
 margin: 0 0 1em 0;
-} */
+}
 /* ============ typography ============ */
 
 h1 {
