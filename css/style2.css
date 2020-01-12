@@ -13,6 +13,9 @@ section::after {
   display: block;
   clear: both;
 } */
+.container-fluid {
+  width: 95%;
+}
 
 body {
   font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; color: #555; margin: 0; padding: 0;
@@ -22,7 +25,7 @@ body {
 /* --------- NAVBAR --------- */
 
 .navbar {
-  background-color: #eee;
+  background-color: white;
 }
 .nav-link {
   color: var(--company-color-dark);
@@ -164,15 +167,62 @@ nav .nav-item:hover::after {
   background-repeat: no-repeat;
   color: #eee;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding-top: 10em;
 }
+
+
 
 .home-hero h1 {
   font-size: 2em;
   color: #fff;
 }
+
+/* backgrounds */
+
+
+.backgrounds {
+  background-image: url(../img/hex.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-blend-mode: normal;
+  padding-top: 4em;
+  margin-top: 2em;
+
+}
+.backgrounds h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: white;
+}
+
+@media (min-width: 30rem) {
+  .backgrounds {
+    padding-top: 4em;
+    margin-top: 2em;
+    height: 35vh;
+  }
+  .backgrounds h1 {
+    font-size: 2.0em;
+    font-weight: 600;
+  }
+}
+@media (min-width: 60rem) {
+  .backgrounds {
+    padding-top: 4em;
+    margin-top: 2em;
+    height: 45vh;
+  }
+  .backgrounds h1 {
+    font-size: 3.0em;
+    font-weight: 700;
+  }
+}
+
+
+
 
 .title {
   font-size: 2.5rem;
