@@ -183,18 +183,18 @@ nav .nav-item:hover::after {
 
 .backgrounds {
   background-image: url(../img/hex.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   background-blend-mode: normal;
-  padding-top: 4em;
-  margin-top: 2em;
+  padding-top: 1em;
+  margin-top: 1em;
 
 }
 .backgrounds h1 {
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: .6em;
+  font-weight: 600;
   color: white;
 }
 
