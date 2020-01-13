@@ -19,6 +19,12 @@ section::after {
   margin: 0 auto;
 } */
 
+/*
+* {
+  transition: all ease-in-out 300ms;
+}
+*/
+
 body {
   font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; color: #555; margin: 0; padding: 0;
 }
@@ -109,6 +115,8 @@ nav .nav-item:hover::after {
   border-width: 2px;
   border-style: solid;
   padding: .5em 1.75em;
+ 
+  
 }
 
 @media (min-width: 60rem) {
@@ -222,6 +230,42 @@ nav .nav-item:hover::after {
     font-size: 3.0em;
     font-weight: 700;
   }
+}
+
+.card {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15)
+}
+
+.card:hover {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.40);
+    transition: all ease-in-out 200ms;
+}
+
+.service-list {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.tall-list {
+	line-height: 3.0em;
+}
+
+.service-list:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--company-color-light);
+}
+
+.service-card {
+  background-color: white;
+  border: 0px;
+  padding-bottom: 2.5em;
+  display: inline-block;
+}
+
+.service-card .card-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 2.7em;
+  display: inline-flex;
 }
 
 
