@@ -1,0 +1,524 @@
+:root {
+  --gradient: linear-gradient(210deg, #286EF0, #46BEF0, #286EF0);
+  --company-color-dark: rgb(40, 110, 240);
+  --company-color-light: rgb(70, 190, 240);
+  --company-color-highlight: #92140C;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC:600,700');
+
+
+body {
+  font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0;
+  text-decoration: none;
+}
+
+
+/* * {
+  box-sizing: border-box;
+  transition: all ease-in-out 400ms;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  max-width: 90em;
+  margin: 0 auto;
+}
+
+.clearfix::after,
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* Text */
+
+h1, h2, h3, h4 {text-align: center;}
+
+
+p {
+margin: 0 0 1em 0;
+}
+/* ============ typography ============ */
+
+h1 {
+  font-weight: 300;
+  font-szie:1.7rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+  color: #DDD;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .5em;
+}
+
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width:60rem) {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 4.0rem;
+  }
+}
+
+/* Nav */
+
+nav .nav-item  {
+  color: ;
+  margin: 2px;
+}
+
+nav .nav-item:hover {
+  color: #fff;
+  background-color: rgb(40, 110, 240);
+  transition: background 0.4s ease 0s;
+  border-radius: 10px;
+}
+
+nav .active {
+  color: rgb(40, 110, 240);
+  border-radius: 10px;
+  border: 2px rgb(40, 110, 240) solid;
+}
+
+.navbar {
+  background-color: rgba(255,255,255,.95);
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(40, 110, 240);
+  border-radius: 3px;
+}
+
+.navbar-toggler-icon  {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, .85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+  border: 1px solid rgb(40, 110, 240);
+  border-radius: 3px;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+.dropdown-menu .active {
+  background-color: #fff;
+  color: #000;
+}
+
+.dropdown-menu > a {
+  color: rgb(40, 110, 240);
+}
+
+.dropdown-menu > a:hover {
+  color: #000;
+}
+
+.navbar-brand {
+  width: 50%;
+  min-width: 186px;
+}
+
+/* ============ buttons ============ */
+
+.button {
+  background-image: linear-gradient(rgb(40, 110, 240), rgb(70, 190, 240));
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #fff;
+  border-color: rgb(40, 110, 240);
+}
+
+
+.button-accent:hover,
+.button-accent:focus {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: #fff;
+  text-decoration: none;
+  transition: background-gradient 04s ease-out;
+}
+
+.button-dark {
+  color: white;
+  border-color: white;
+}
+
+
+.button-dark:hover,
+.button-dark:focus {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: white;
+  text-decoration: none;
+  border-style: outset;
+}
+
+.button-dark:hover,
+.button-dark: {
+  background: linear-gradient(rgb(70, 190, 240), rgb(40, 110, 240));
+  color: white;
+  text-decoration: none;
+  border-style: outset;
+}
+
+
+
+/* ============ Hero ============ */
+.home-hero {
+  background-image: url(../img/tax_papers.jpg);
+  background-color: rgba(20,20,20,.55);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20em 0 20em 0;
+  color: #eee;
+  text-align: center;
+  width: 100vw;
+}
+
+.title-img {
+  color: #eee;
+  padding: 0em 0;
+  min-width: 100%;
+  position: center;
+
+}
+
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 110vh;
+    padding-top: 35vh;
+
+  }
+}
+
+
+/* ============ hero-home-text ============ */
+
+.home-about-textbox {
+  background-color: #fff;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 4px solid #42A4EF;
+  outline-offset: -2.5em;
+  color: #111;
+  position: relative;
+}
+
+.home-about-textbox h1 {
+  color: #42A4EF;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1em;
+  background: #fff;
+  padding: 0 .35em;
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+
+  }
+  .home-about-textbox h1 {
+    top: .6em;
+    padding: 0 .325em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem
+  }
+
+  .home-about {
+    background-image: url(../img/calculator-med.jpg);
+    background-color: rgba(200,200,200,.50);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    padding-bottom: 10em;
+    background-size: cover;
+  }
+
+  .home-about-textbox {
+    width: 50%;
+    padding: 7em;
+    outline-offset: -3.75em;
+    margin-left: -2.5%;
+    top: -5em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(60, 150, 240, 0.8);
+
+  }
+
+  .home-about-textbox h1 {
+    top: .75em;
+    left: 6rem;
+    transform: translateX(0);
+  }
+
+  .home-about-textbox li {
+    color: var(--company-color-dark);
+    list-style: none;
+    font-size: 2em;
+    text-align: justify;
+  }
+
+
+}
+
+
+/* ============ Parallax ============ */
+
+.parallax--bg,
+.parallax--box {
+  transition: initial;
+}
+
+
+
+/* backgrounds */
+
+
+.backgrounds {
+  background-image: url(../img/hex.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(60, 150, 240, 0.9);
+  height: 25vh;
+  color: white;
+  background-blend-mode: normal;
+  padding-top: 4em;
+  margin-top: 2em;
+
+}
+.backgrounds h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: white;
+}
+
+@media (min-width: 30rem) {
+  .backgrounds {
+    padding-top: 4em;
+    margin-top: 2em;
+    height: 35vh;
+  }
+  .backgrounds h1 {
+    font-size: 2.0em;
+    font-weight: 600;
+    color: green;
+  }
+}
+@media (min-width: 60rem) {
+  .backgrounds {
+    padding-top: 4em;
+    margin-top: 2em;
+    height: 45vh;
+  }
+  .backgrounds h1 {
+    font-size: 3.0em;
+    font-weight: 700;
+    color: red;
+  }
+}
+
+
+
+/* ============ Portfolio ============ */
+
+.portfolio {
+  margin: 3em 0 0;
+  z-index: 99;
+  text-align: center;
+}
+
+
+.port-item {
+  margin: 0;
+  position: relative;
+}
+
+.port-item img {
+  display: block;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,.6);
+  padding: 2em;
+}
+
+.port-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .port-item {
+    width: 100%;
+    float: left;
+  }
+
+  .port-item img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 60rem) {
+  .port-item {
+    width: 33.33333334%;
+    overflow: hidden;
+
+  }
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+}
+
+/* ============ cta ============ */
+
+/* .cta {
+  background-image: linear-gradient(rgb(40, 110, 240), rgb(70, 190, 240));
+  padding: 5em 0;
+  text-align: center;
+  color: white;
+} */
+
+.cta {
+  text-align: center;
+  padding: 10em, 0;
+  display: flex;
+  background: white;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite;
+}
+
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    padding: 25px 0px 60px 0px;
+    color: black;
+    font-size: .8em;
+}
+
+footer a {
+    color: rgb(40, 110, 240);
+    text-decoration: none;
+}
+
+footer h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.9em;
+}
+
+footer h4 {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+footer a:hover {
+    color: #fff;
+    padding: .3em;
+    background-color: rgb(40, 110, 240);
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+footer .column {margin-bottom: 20px;}
+footer .content{text-align: justify;}
+
+.copyright{
+  margin-top: 25px;
+}
+
+.disclaimer {
+    font-size: .7rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.text-muted {
+    font-size: .8em;
+}
+
+address{
+    font-size: 1.1rem;
+}
