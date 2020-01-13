@@ -115,8 +115,8 @@ nav .nav-item:hover::after {
   border-width: 2px;
   border-style: solid;
   padding: .5em 1.75em;
- 
-  
+
+
 }
 
 @media (min-width: 60rem) {
@@ -368,3 +368,34 @@ footer .content{text-align: justify;}
 address{
     font-size: 1.1rem;
 }
+
+ul.social {
+	display: block;
+	margin: 5% 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.social li {
+	font-size: 3em;
+	display: inline;
+	padding: 0 4%;
+}
+
+
+ul.social li a {}
+ul.social li.facebook a {color: rgb(59,89,152);}
+ul.social li.twitter a {color: rgb(0, 172, 237);}
+ul.social li.instagram a {color: rgb(81, 127, 237);}
+ul.social li.youtube a {color: rgb(187, 0, 0);}
+ul.social li.flickr a {color: rgb(255, 0, 132);}
+ul.social li.linkedin a {color: rgb(0, 123, 182);}
+ul.social li.yelp a {color: #af0606;}
+
+/* ul.social li a:hover {
+  padding: 1.04rem;
+  border-radius: 99px;
+  transition: all ease-in-out 400ms;
+} */
+/* ul.social li.facebook a:hover {color:#fff; background-color: rgb(59,89,152);}
+ul.social li.yelp a:hover {color:#fff; background-color: #af0606;} */
