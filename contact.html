@@ -6,7 +6,10 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style2.css">
+
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 
 
   <title>Consultax | Accounting Services</title>
@@ -14,18 +17,19 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/consultax-logo-sq.svg" alt="Consultax Accounting Tax Logo Wheaton">
-    </a>
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#consultaxNavbarToggler"
-            aria-controls="consultaxNavbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/consultax-logo-sq.svg" alt="Consultax Accounting Tax Logo Wheaton">
+      </a>
+      <button class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#consultaxNavbarToggler"
+      aria-controls="consultaxNavbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -35,35 +39,68 @@
           <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="services.html">Services</a>
         </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link disabled">About Us</a>
+        </li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+		<div class="container">
+            <div class="row ">
+
+            	<div class="jumbotron contact-page col-12 text-center">
+
+                	<img src="img/logo-vector-white.svg" width="50%"/>
+            		<h3 class="pt-4">417 W Roosevelt Rd </h3>
+            		<h3>Wheaton, IL 60187</h3>
+            		<h3><a href="tel:6309011410" class="text-dark"> (630) 901-1410 </a></h3>
+
+            	</div>
+            </div>
         </div>
-      </li>
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-    </div>
-  </nav>
+
+
+
+
+        <div class="container">
+        	<div class="row">
+                <div class="map-responsive embed-responsive embed-responsive-4by3 mb-5">
+            	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.5728665592646!2d-88.11473768412691!3d41.859019674586364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e545c313d5a7d%3A0xde09400ae9e809bd!2s417%20W%20Roosevelt%20Rd%2C%20Wheaton%2C%20IL%2060187!5e0!3m2!1sen!2sus!4v1578934447379!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+        	</div>
+        </div>
+
+
+
 
 <div class="container">
   <div class="row">
-    <div class="col-12 text-center">
-      
-    </div>
+    <ul class="social col-md-12">
+      <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg" data-toggle="tooltip" data-placement="top" title="Visit Our Facebook Page."></i></a></li>
+      <!-- <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+      <li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li> -->
+      <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+      <!-- <li class="yelp"><a href="#"><i class="fa fa-yelp fa-lg" data-toggle="tooltip" data-placement="top" title="Check us out on Yelp."></i></a></li> -->
+    </ul>
   </div>
 </div>
 
+<div class="container-fluid text-white mt-5">
+  <div class="row cta">
+    <h1 class="col-12">Get In Touch</h1>
+    <a class="col-12 text-center text-white" href="tel:1-630-901-1410"><h3>CALL US: 630-901-1410</h3></a>
+    <a class="col-12 text-center text-white" href="mailto:info@consultaxcorp.com"><h3>Email: info@counsultax.com</h3></a>
+  </div>
+</div>
 
 
 <!--Footer-->
@@ -85,8 +122,8 @@
         <h4>Quick Links</h4>
         <h5><a href="index.html">Home</a></h5>
         <h5><a href="services.html">Services</a></h5>
-        <h5><a href="hours.html">Hours</a></h5>
         <h5><a href="contact.html">Contact</a></h5>
+        <h5 ><a href="#">About Us</a></h5>
       </div>
       <!-- Second column-->
 
@@ -119,5 +156,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/parallax.js">
+</script>
 
 </html>
