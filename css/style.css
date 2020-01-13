@@ -268,8 +268,8 @@ nav .nav-item:hover::after {
   display: inline-flex;
 }
 
-.contant-page.jumbotron {
-  display: flex;
+.contact-page.jumbotron {
+  display: block;
   background: white;
   background-size: 300%;
   background-image: var(--gradient);
