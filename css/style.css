@@ -34,13 +34,14 @@ body {
 }
 
 #index-page {
-    margin-top: -80px;
+    margin-top: -0px;
 }
 /* --------- NAVBAR --------- */
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
     display: flex;
+    box-shadow: 1px 1px 15px 1px currentColor;
 }
 
 .reverse-navbar {
@@ -97,7 +98,6 @@ nav .nav-item:hover::after {
     text-align: center;
     background-color: yellow;
 }
-
 
 .dropdown-menu .dropdown-item::after {
     content: '';
@@ -176,13 +176,39 @@ nav .nav-item:hover::after {
     color: #eee;
     text-align: center;
     width: 100%;
-    height: 140vh;
+    height: 150vh;
     padding-top: 10em;
 }
 
 .home-hero h1 {
     font-size: 2em;
     color: #fff;
+}
+
+.service1 {
+    padding: 12em 0 1em 0;
+    color: var(--company-color-dark);
+}
+.service2 {
+    padding: 5em 0 1em 0;
+    color: var(--company-color-light);
+}
+.service3 {
+    padding: 5em 0 1em 0;
+    color: var(--company-color-dark);
+}
+.service4 {
+    padding: 5em 0 0em 0;
+    color: var(--company-color-light);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }
 /* backgrounds */
 
@@ -376,7 +402,7 @@ color: white;
 
 .review-card img {
     border-radius: 50%;
-    border: var(--company-color-complement) solid 2px;
+    border: var(--company-color-complement) solid 5px;
     width: 30%;
 }
 
@@ -392,19 +418,9 @@ color: white;
     line-height: 1.6;
     text-align: left;
     position: relative;
-    animation: reviewText;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes reviewText {
-    0% {
-        bottom: -300px
-    }
-    100% {
-        bottom: 0px
-    }
-}
+
 
 .review-text p::before {
     content: "\201C";
@@ -436,6 +452,7 @@ color: white;
     padding: 0;
     width: 125px;
     padding-top: .3em;
+    color: var(--company-color-complement);
 }
 
 .social-link {
