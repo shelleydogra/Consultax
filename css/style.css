@@ -54,6 +54,7 @@ body {
 
 nav img {
     min-width: 55px;
+    max-width: 25%;
 }
 
 nav .nav-item {
