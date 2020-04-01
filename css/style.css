@@ -660,3 +660,73 @@ ul.social li.linkedin a:hover {
     color: #fff;
     background-color: rgb(0, 123, 182);
 }
+
+
+.special__announcement {
+    background-color: #DB4008;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.special__announcement p{
+    font-size: 1.5em;
+    align-self: center;
+    padding: .2em 1em;
+
+    
+}
+
+.special__announcement .btn {
+    color: white;
+    width: 200px;
+    border-radius: 30px;
+background: linear-gradient(145deg, #c53a07, #ea4409);
+box-shadow:  5px 5px 7px #581a03, 
+             -5px -5px 7px #ff660d;
+}
+
+.special__announcement .btn:active {
+    border-radius: 30px;
+background: #DB4008;
+box-shadow: inset 5px 5px 8px #581a03, 
+            inset -5px -5px 8px #ff660d;
+}
+
+@media (min-width: 30rem) {
+    .special__announcement {
+        height: 80vh;
+    }
+    .special__announcement p {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 60rem) {
+    .special__announcement {
+        height: 70vh;
+    }
+    .special__announcement p {
+        font-size: 3em;
+    }
+
+}
+
+.special-link {
+    
+    background-color: #DB4008;
+    color: white;
+}
+
+.special-link:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
