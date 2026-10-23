@@ -176,7 +176,7 @@ nav .active.nav-item::after {
 /* --------- Home Hero --------- */
 
 .home-hero {
-    background-image: url(../img/tax_papers.jpg);
+    background-image: url(../img/img-assets/tax-preparation-desk-with-calculator-and-coffee.webp);
     background-color: rgba(20, 20, 20, .75);
     background-blend-mode: darken;
     background-size: cover;
@@ -222,7 +222,7 @@ nav .active.nav-item::after {
 /* backgrounds */
 
 .backgrounds {
-    background-image: url(../img/hex.png);
+    background-image: url(../img/img-assets/abstract-blue-hexagonal-geometric-background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -331,7 +331,7 @@ display: inline-block;
 /* ============ Clients ============ */
 
 .clients {
-    background-image: url(../img/hex.png);
+    background-image: url(../img/img-assets/abstract-blue-hexagonal-geometric-background.webp);
     background-color: var(--gradient);
     animation: bg-animation 700s infinite;
     background-blend-mode: normal;
